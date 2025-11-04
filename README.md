@@ -6,28 +6,25 @@
 
 ## 🌟 Features
 
-* 🤖 **AI Data Extraction** — Upload PDFs, images, Excel/CSV files for automatic data extraction via Google Gemini API
-* 🧩 **Three-Tab Interface** — Manage **Invoices**, **Products**, and **Customers** with real-time Redux synchronization
-* 🧮 **Smart Tax & Discount Calculation** — Automatically calculates totals, taxes, and discounts
-* ✏️ **Inline Editing** — Edit any field directly with validation and visual indicators for missing data
-* 📦 **Export Functionality** — Download all tables as Excel or CSV files
-* 🧠 **Error Handling** — Intelligent detection for unsupported formats and missing data
-* ⚡ **Performance Optimized** — Built with Next.js 15 (Turbopack) and React 19
-
+- 🤖 **AI Data Extraction** — Upload PDFs, images, Excel/CSV files for automatic data extraction via Google Gemini API
+- 🧩 **Three-Tab Interface** — Manage **Invoices**, **Products**, and **Customers** with real-time Redux synchronization
+- 🧮 **Smart Tax & Discount Calculation** — Automatically calculates totals, taxes, and discounts
+- ✏️ **Inline Editing** — Edit any field directly with validation and visual indicators for missing data
+- 📦 **Export Functionality** — Download all tables as Excel or CSV files
 ---
 
 ## 🧰 Tech Stack
 
-| Layer                   | Technology                               |
-| ----------------------- | ---------------------------------------- |
-| **Framework**           | Next.js 15.3 (App Router with Turbopack) |
-| **Frontend**            | React 19 + TypeScript 5                  |
-| **State Management**    | Redux Toolkit 2.9                        |
-| **Styling**             | Tailwind CSS 4.0 + Shadcn/UI             |
-| **AI Integration**      | Google Gemini 2.5 Flash                  |
-| **Spreadsheet Parsing** | XLSX 0.18.5                              |
-| **Animations**          | Framer Motion 12                         |
-| **Icons**               | Lucide React 0.552                       |
+| Layer                   | Technology                   |
+| ----------------------- | ---------------------------- |
+| **Framework**           | Next.js                      |
+| **Frontend**            | React + TypeScript         |
+| **State Management**    | Redux Toolkit                |
+| **Styling**             | Tailwind CSS + Shadcn/UI |
+| **AI Integration**      | Google Gemini Flash      |
+| **Spreadsheet Parsing** | XLSX                 |
+| **Animations**          | Framer Motion             |
+| **Icons**               | Lucide React           |
 
 ---
 
@@ -35,8 +32,8 @@
 
 ### Prerequisites
 
-* Node.js 20+
-* Google Gemini API Key ([Get it here](https://aistudio.google.com/app/apikey))
+- Node.js 20+
+- Google Gemini API Key ([Get it here](https://aistudio.google.com/app/apikey))
 
 ### Installation
 
@@ -119,11 +116,11 @@ When a product or customer name changes:
 
 | Test Case | Description                       | Result |
 | --------- | --------------------------------- | ------ |
-| ✅ Case 1  | PDF Invoice Extraction            | Passed |
-| ✅ Case 2  | Image + PDF Combo                 | Passed |
-| ✅ Case 3  | Excel File Parsing                | Passed |
-| ✅ Case 4  | Multiple Excel Files              | Passed |
-| ✅ Case 5  | Mixed Uploads (PDF + Image + CSV) | Passed |
+| ✅ Case 1 | PDF Invoice Extraction            | Passed |
+| ✅ Case 2 | Image + PDF Combo                 | Passed |
+| ✅ Case 3 | Excel File Parsing                | Passed |
+| ✅ Case 4 | Multiple Excel Files              | Passed |
+| ✅ Case 5 | Mixed Uploads (PDF + Image + CSV) | Passed |
 
 ---
 
@@ -133,9 +130,9 @@ When a product or customer name changes:
 
 > **Message:** `Gemini API not initialized`
 
-* Ensure `.env.local` exists
-* Verify: `NEXT_PUBLIC_GEMINI_API_KEY=your_actual_key`
-* Restart development server
+- Ensure `.env.local` exists
+- Verify: `NEXT_PUBLIC_GEMINI_API_KEY=your_actual_key`
+- Restart development server
 
 ### Extraction Failed
 
@@ -164,49 +161,26 @@ npm run lint     # Code quality check
 
 ## 🔒 Security & Privacy
 
-* API key secured via `.env.local` (never committed)
-* All processing happens **client-side** before upload
-* No persistent storage or tracking
-* HTTPS required for deployment
+- API key secured via `.env.local` (never committed)
+- All processing happens **client-side** before upload
+- No persistent storage or tracking
+- HTTPS required for deployment
 
 ---
 
 ## ☁️ Deployment
 
-### 🚀 Deploy on Vercel (Recommended)
+### 🚀 Deploy on Vercel
 
 1. Push code to GitHub
 2. Import project to [Vercel](https://vercel.com)
 3. Add environment variable: `NEXT_PUBLIC_GEMINI_API_KEY`
-4. Deploy — Next.js 15 auto-configured
-
-### Other Supported Platforms
-
-* Netlify
-* Railway
-* Render
-* AWS Amplify
-* Azure Static Web Apps
-
----
+4. Deploy — Next.js auto-configured
 
 ## 🎨 UI/UX Highlights
 
-* Real-time **inline editing** with validation
-* Visual indicators for **missing or invalid data**
-* Responsive and mobile-friendly tables
-* **Search & sort** functionality across all tabs
-* Smooth animations via **Framer Motion**
-
----
-
-## 🧑‍💻 Code Quality & Best Practices
-
-* ✅ TypeScript fully enforced
-* ✅ Modular, DRY component structure
-* ✅ Redux hooks (`useAppDispatch`, `useAppSelector`)
-* ✅ Error boundaries and validation states
-* ✅ Path aliases (`@/components`, `@/lib`)
-
----
-
+- Real-time **inline editing** with validation
+- Visual indicators for **missing or invalid data**
+- Responsive and mobile-friendly tables
+- **Search & sort** functionality across all tabs
+- Smooth animations via **Framer Motion**
